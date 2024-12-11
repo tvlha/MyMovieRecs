@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# MyMovieRecs 🎥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I don't watch a lot of movies because I can never find anything I like, so I decided to build a React-based web app for finding movies based on my watch history. This is powered by TMDB and OpenAI APIs for the movie database and the AI-powered recommendations. Users can explore trending movies, add their favorites, and receive personalized recommendations on what they like to watch.
 
-## Available Scripts
+## Features
+- **Trending Movies**: View the latest trending movies with posters and titles.
+- **Search Functionality**: Dynamically search for movies using TMDB's API.
+- **Favorites**: Add/remove movies to/from your favorites list.
+- **AI-Powered Recommendations**: Get personalized movie recommendations based on your favorites, powered by OpenAI's GPT.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: Frontend framework.
+- **TMDB API**: Movie database and search functionality.
+- **OpenAI API**: Personalized AI-powered movie recommendations.
+- **TailwindCSS**: Styling for the dark-themed UI.
 
-### `npm start`
+## Setup Instructions
+> I do intend to deploy this application once I spend some more time refining it and adding all of the functionality that users would want to see.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tvlha/MyMovieRecs
+   cd MyMovieRecs
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a .env file in the root directory with the following:
+   ```bash
+   REACT_APP_TMDB_API_KEY=your_tmdb_api_key
+   REACT_APP_OPENAI_API_KEY=your_openai_api_key
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features to Implement
+- **Better UI**
+- **Improved AI recommendations with additional metadata**
+- **Log-in feature to save favorites**
+- **Movie posters with AI recommendations**
+- **Live deployment**
 
-### `npm test`
+## Contributing
+Feel free to fork the repository and submit a pull request for any enhancements!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License.
